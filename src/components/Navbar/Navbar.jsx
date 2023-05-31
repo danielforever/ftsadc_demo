@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/cropftsadclogo.png";
 import Button from "./Button";
 import NavLinks from "./NavLinks";
-import {BsFillMoonStarsFill} from 'react-icons/bs';
-import { FaLanguage } from "react-icons/fa";
+import {BsFillMoonStarsFill, BsMoonStars} from 'react-icons/bs';
+import { FaLanguage  } from "react-icons/fa";
+import {RiEnglishInput, RiEmphasisCn} from "react-icons/ri";
 import 'react-awesome-button/dist/styles.css';
 import './Navbar.css';
 
@@ -23,11 +24,14 @@ const Navbar = ({state}) => {
               </div>
               <ul>
                 <li className="p-3 xl:hidden">
-                  <BsFillMoonStarsFill onClick={() => {state.setDarkMode(!state.darkMode)}} className=" cursor-pointer text-2xl"/>
-                
+                  {!state.darkMode && <BsFillMoonStarsFill onClick={() => {state.setDarkMode(!state.darkMode)}} className=" cursor-pointer text-2xl"/>}
+                  {state.darkMode && <BsMoonStars onClick={() => {state.setDarkMode(!state.darkMode)}} className=" cursor-pointer text-2xl"/>}
                 </li>
               </ul>
-              <div className="p-3 xl:hidden"><FaLanguage onClick={() => {state.setLanguage(!state.langMode)}} className=" cursor-pointer text-3xl "/></div>
+              <div className="p-3 xl:hidden">
+                {state.langMode && <RiEnglishInput onClick={() => {state.setLanguage(!state.langMode)}} className=" cursor-pointer text-3xl "/>}
+                {!state.langMode && <RiEmphasisCn onClick={() => {state.setLanguage(!state.langMode)}} className=" cursor-pointer text-3xl "/>}
+              </div>
             </div>
             <ul className="xl:flex hidden uppercase text-sm items-center gap-6 font-[Poppins]">
               <li>
@@ -74,11 +78,15 @@ const Navbar = ({state}) => {
             </div>
             <ul>
             <li className="p-3 hidden xl:block" >
-                <BsFillMoonStarsFill onClick={() => {state.setDarkMode(!state.darkMode);}} className=" cursor-pointer text-2xl"/>
+              {!state.darkMode && <BsFillMoonStarsFill onClick={() => {state.setDarkMode(!state.darkMode)}} className=" cursor-pointer text-2xl"/>}
+              {state.darkMode && <BsMoonStars onClick={() => {state.setDarkMode(!state.darkMode)}} className=" cursor-pointer text-2xl"/>}
             </li>
             
             </ul>
-            <div className="p-3 hidden xl:block"><FaLanguage onClick={() => {state.setLanguage(!state.langMode)}} className=" cursor-pointer text-3xl "/></div>
+            <div className="p-3 hidden xl:block">
+              {state.langMode && <RiEnglishInput onClick={() => {state.setLanguage(!state.langMode)}} className=" cursor-pointer text-3xl "/>}
+              {!state.langMode && <RiEmphasisCn onClick={() => {state.setLanguage(!state.langMode)}} className=" cursor-pointer text-3xl "/>}
+            </div>
             {/* Mobile nav */}
             <ul
               className={`
