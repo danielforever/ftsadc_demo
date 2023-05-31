@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ftsadc_demo/static/css/main.5eeca242.css",
-    "main.js": "/ftsadc_demo/static/js/main.8639b2d9.js",
+    "main.js": "/ftsadc_demo/static/js/main.f65889f6.js",
     "static/js/787.c4e7f8f9.chunk.js": "/ftsadc_demo/static/js/787.c4e7f8f9.chunk.js",
     "static/media/dc.mp4": "/ftsadc_demo/static/media/dc.c50b68c0189f916ba0a2.mp4",
     "static/media/ga.jpg": "/ftsadc_demo/static/media/ga.f82377863eb7f3b1d7ee.jpg",
@@ -49,11 +49,11 @@
     "static/media/welcome.jpg": "/ftsadc_demo/static/media/welcome.6589603ad0a1af48a0da.jpg",
     "index.html": "/ftsadc_demo/index.html",
     "main.5eeca242.css.map": "/ftsadc_demo/static/css/main.5eeca242.css.map",
-    "main.8639b2d9.js.map": "/ftsadc_demo/static/js/main.8639b2d9.js.map",
+    "main.f65889f6.js.map": "/ftsadc_demo/static/js/main.f65889f6.js.map",
     "787.c4e7f8f9.chunk.js.map": "/ftsadc_demo/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5eeca242.css",
-    "static/js/main.8639b2d9.js"
+    "static/js/main.f65889f6.js"
   ]
 }
